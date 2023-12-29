@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:80vw;
+    height: 70vh;
+    background-color: blue;
+    position: relative;
+    an
+}
+@keyframes animation-x{
+from{
+    left: 0vw;
+}
+to{
+    left: 74vw;
+}
+}
+@keyframes animation-y{
+    from{
+        bottom: 30vh;
+    }
+    to{
+        bottom: 50vh;
+    }
+    }
+.box{
+    width: 100px;
+    height:100px;
+    background-color: red;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 30vh;
+    animation: animation-x 3s ease-in-out 1s 1,
+               animation-y 3s ease-in-out 1s 1s;
+    
+
+}

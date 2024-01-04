@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color: black;
+            --secColor: rgb(44, 141, 141);
+            --margin: 100px;
+            --secMargin: 50px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            background-color: var(--secColor);
+            margin: var(--margin);
+            position: absolute;
+        }
+
+        .box {
+            width: 50vw;
+            height: 40vh;
+            background-color: var(--color);
+            margin: var(--secMargin);
+        }
+
+        .box button {
+            width: 100px;
+            height: 50px;
+            color: rgb(255, 0, 0);
+        }
+
+        .box button:hover {
+            color: var(--secColor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <button value="Submit"></button>
+        </div>
+    </div>
+</body>
+
+</html>

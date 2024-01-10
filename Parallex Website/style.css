@@ -45,11 +45,17 @@
   height: 200px;
   background-color: #f4f4f4;
   color: #666;
+
   text-align: center;
   padding: 40px;
   letter-spacing: 1.1px;
 }
 .s1 h1 {
-  padding: 20px;
   letter-spacing: 1.1px;
+  font-size: 29px;
+}
+.s2,
+.s3 {
+  color: #f4f4f4;
+  background-color: #313534;
 }
